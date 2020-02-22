@@ -11,7 +11,7 @@ html, body {
 }
 
 header {
-    margin: 1px auto;
+    margin: 1px auto 15px;
     width: 80%;
     display: block;
     background: #0094ff;
@@ -44,7 +44,7 @@ header > p {
 div.form {
     width: 80%;
     display: block;
-    margin: 1px auto;
+    margin: 15px auto;
     text-align: center;
 }
 
