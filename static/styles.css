@@ -32,15 +32,6 @@ header > p {
 }
 
 
-#result {
-    width: 50px;
-    font-weight: bold;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    color: red;
-    text-align: center;
-    padding-top: 20px;
-}
-
 div.form {
     width: 80%;
     display: block;
