@@ -4,9 +4,6 @@
 .vs/
 CIFAR-10-classification/
 Dockerfile
+__pycache__/
 env/
 images/
-Project_3_CIFAR-10.py
-Project_3_CIFAR-10.ipynb
-__pycache__/
-Procfile
