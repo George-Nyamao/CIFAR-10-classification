@@ -4,7 +4,7 @@ agent { docker { image 'python:3.7' }}
 		stage('Build'){
 			steps {
 				echo 'Building the app ...'
-				sh 'python -version'
+				sh 'python --version'
 			}
 		}
 		stage('Test') {
