@@ -4,6 +4,7 @@ pipeline {
 		stage('Build'){
 			steps {
 				echo 'Building the app ...'
+				sh 'pip install requirements.txt'
 				sh 'python app.py'
 			}
 		}
