@@ -4,8 +4,7 @@ agent { docker { image 'python:3.7' }}
 		stage('Build'){
 			steps {
 				echo 'Building the app ...'
-				sh 'pip install requirements.txt'
-				sh 'python app.py'
+				sh 'python -version'
 			}
 		}
 		stage('Test') {
