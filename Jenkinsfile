@@ -4,8 +4,7 @@ pipeline {
 		stage('Build'){
 			steps {
 				echo 'Building the app ...'
-				sh 'env\Scripts\activate'
-				sh 'pip install -r requiremets.txt"	
+				sh 'python app.py'
 			}
 		}
 		stage('Test') {
