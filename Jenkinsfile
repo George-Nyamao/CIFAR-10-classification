@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage ('Run Image') {
 			steps {
-				sh 'docker run -d --name cifar10classifier cifar_10_classifierv1'
+				echo 'Will run soon..'
 			}
 		}
 		stage ('Testing') {
