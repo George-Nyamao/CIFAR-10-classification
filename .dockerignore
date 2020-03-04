@@ -1,0 +1,7 @@
+.git
+.gitignore
+.ipynb_checkpoints/
+.vs/
+__pycache__/
+Project_3_CIFAR-10_v1.py
+Project_3_CIFAR-10_v1.ipynb
