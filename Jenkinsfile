@@ -9,7 +9,7 @@ pipeline {
 		}
 		stage ('Build Image') {
 			steps {
-				sh 'docker build -t cifar_10_classifierv1 .'
+				sh 'docker build -t cifar_10_classifier:v1 .'
 			}
 		}
 		stage ('Run Image') {
