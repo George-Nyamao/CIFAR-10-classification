@@ -3,7 +3,6 @@
 .gcloudignore
 .vs/
 CIFAR-10-classification/
-Dockerfile
 __pycache__/
 env/
 images/
