@@ -12,9 +12,10 @@ pipeline {
 				sh 'docker build -t cifar_10_classifier:v1 .'
 			}
 		}
-		stage ('Run Image') {
+		stage ('Run Container') {
 			steps {
-				echo 'Will run soon..'
+				echo 'Running container..'
+				sh 'docker run -d -p 8008:8080 --name cifar10 cifar_10_classifier
 			}
 		}
 		stage ('Testing') {
