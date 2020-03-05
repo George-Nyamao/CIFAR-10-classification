@@ -9,9 +9,7 @@ pipeline {
 		}
 		stage ('Build Image') {
 			steps {
-				withEnv(["HOME=$env.WORKSPACE"]){
-					sh 'docker build -t cifar_10_classifier:v2 .'
-				}
+				sh 'docker build -t cifar_10_classifier .'
 			}
 		}
 		stage ('Run Container') {
