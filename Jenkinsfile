@@ -10,6 +10,7 @@ pipeline {
 		stage ('Build Image') {
 			steps {
 				withEnv(["HOME=$env.WORKSPACE"]){
+					sh 'sudo systemctl daemon-reload'
 					sh 'docker build -t cifar_10_classifier:v2 .'
 				}
 			}
