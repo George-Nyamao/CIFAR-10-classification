@@ -1,8 +1,7 @@
 pipeline {
-	agent {dockerfile true}
+	agent { docker {image 'python:3.7.6'}}
 	stages {
 		stage ('Clone Repository'){
-		/* Cloning the repository for our workspace*/
 			steps {
 				checkout scm
 			}
