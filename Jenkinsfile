@@ -1,5 +1,5 @@
 pipeline {
-	agent { docker { image 'python:3.7.6' } }
+	agent any
 	stages {
 		stage ('Clone Repository'){
 		/* Cloning the repository for our workspace*/
