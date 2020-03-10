@@ -61,4 +61,4 @@ def inference():
     return render_template("result.html", result=my_img, image=b64_data)
 
 if __name__ == '__main__':
-   app.run()
+   app.run(host='0.0.0.0', debug=False, threaded=False, port=8000)

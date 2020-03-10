@@ -8,18 +8,19 @@ pipeline {
 		}
 		stage ('Build Image') {
 			steps {
-				sh 'docker build -t cifar_10_classifier .'
+				sh 'docker build --tag=cifar_10_classifier .'
 			}
 		}
 		stage ('Run Container') {
 			steps {
 				echo 'Running container..'
-				sh 'docker run -d -p 8008:8080 --name cifar10 cifar_10_classifier'
+				sh 'docker run -d -p 8008:8080 cifar10 cifar_10_classifier'
 			}
 		}
-		stage ('Testing') {
+		stage ('Open Browser') {
 			steps {
 				echo 'Testing..'
+                sh 'google-chrome http://127.0.0.1:8008'
 			}
 		}
 	}
