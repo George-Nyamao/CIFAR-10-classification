@@ -11,7 +11,7 @@ jsonschema==3.2.0
 Keras==2.2.4
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
-numpy==1.18.1
+numpy==1.22.0
 wincertstore==0.2
 gunicorn
 tensorflow==1.15.2
